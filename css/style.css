@@ -5798,8 +5798,6 @@ body {
   font-size: 16px; }
 
 header {
-  max-height: 600px;
-  height: 600px;
   overflow: hidden; }
 
 img {
@@ -5807,21 +5805,13 @@ img {
   top: 0px;
   left: 50%;
   margin-left: -600px;
-  width: 1200px;
-  height: 100vh; }
+  width: 1200px; }
   @media screen and (min-width: 1200px) {
     img {
       top: auto;
       left: auto;
       margin: 0;
       width: 100%; } }
-
-.name {
-  font-size: 21px;
-  position: absolute;
-  top: 50px;
-  left: 50px;
-  color: #FFF; }
 
 .titles {
   position: absolute;
@@ -5863,7 +5853,7 @@ h2 {
 
 .social {
   position: absolute;
-  top: 55px;
+  top: 30px;
   right: 50px;
   overflow: hidden; }
   .social a {
@@ -5891,4 +5881,105 @@ h2 {
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1); }
 
+#canvas {
+  height: 100vh; }
+
+/*---mouse animation ends---*/
+/*---------- 4. Nav area css starts -------------*/
+.nav-area {
+  height: 65px; }
+
+.nav-area.sticky_navigation {
+  background: #ffffff;
+  height: 80px; }
+
+.navbar-nav {
+  margin-top: 15px; }
+
+.sticky_navigation {
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  -webkit-box-shadow: 0px 3px 4.6px 0.3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 3px 4.6px 0.3px rgba(0, 0, 0, 0.25); }
+
+.sticky_navigation .main-menu {
+  margin-top: 0; }
+
+.sticky_navigation .navbar-brand, .sticky_navigation .navbar-brand span {
+  color: #000000; }
+
+.sticky_navigation .navbar-brand:hover, .sticky_navigation .navbar-brand:focus, .sticky_navigation .navbar-brand span {
+  color: #E91E63; }
+
+.sticky_navigation .nav li a {
+  color: #333333; }
+
+.sticky_navigation .nav li.active a {
+  color: #E91E63; }
+
+.sticky_navigation .nav li.active::before {
+  border-top: 1px solid #E91E63;
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 50%; }
+
+.sticky_navigation .nav li.active::after {
+  border-bottom: 1px solid #E91E63;
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 50%; }
+
+.sticky_navigation .navbar-brand:hover {
+  color: #ffffff; }
+
+.main-menu {
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  margin-top: 10px; }
+
+.navbar {
+  border: 0;
+  margin-bottom: 0; }
+
+.navbar-brand {
+  text-transform: uppercase;
+  font-size: 25px;
+  display: block;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 21px;
+  position: absolute;
+  top: 25px;
+  left: 50px;
+  color: #FFF; }
+
+.logo {
+  padding: 5px;
+  font-size: 32px;
+  letter-spacing: 3px; }
+
+.navbar-right li {
+  display: inline-block;
+  float: none; }
+
+.navbar-right li a {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 600; }
+
+.navbar-right li.active a {
+  font-weight: bold;
+  color: #ffffff; }
+
+.nav > li > a:hover,
+.nav > li > a:active,
+.nav > li > a:focus {
+  background: none; }
+
+.navbar-toggle .icon-bar {
+  background: #033D75; }
+
+/*---------- Nav area css ends -------------*/
 /*# sourceMappingURL=style.css.map */
