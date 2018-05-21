@@ -1,85 +1,342 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta name="viewport" content="width=device-width,user-scalable=no">
     <title>Portfolio</title>
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700|Kaushan+Script|Montserrat' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script type="text/javascript" src="js/modernizr.js"></script>
+
+    <!--Font Awesome css-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+
 </head>
+
 <body>
-    
+
     <header>
-    
-        <img src="images/mountains.jpg" alt="Mountains">
-        <a href="index.html" class="name fancy-font navbar-brand"><span class="logo">ALCHEMY</span></a>
-            <div class="container">
-                <div class="row">
-                    <!--main menu starts-->
-                    <div class="col-md-12">
-                        <div class="main-menu">
-                            <div class="navbar navbar-cus">
-                                <div class="navbar-header">
-                                    
-                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                        <span class="sr-only">Toggle navigation</span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                    </button>
-                                </div>
-    
-                                <div class="navbar-collapse collapse">
-                                    <nav>
-                                        <ul class="nav navbar-nav navbar-right">
-                                            <li class="active"><a class="smooth-menu" href="#home">Home</a></li>
-                                            <li><a class="smooth-menu" href="#about">About</a></li>
-                                            <li><a class="smooth-menu" href="#services">Skillsx</a></li>
-                                            <li><a class="smooth-menu" href="#portfolio">Portfolio</a></li>
-                                            <li><a class="smooth-menu" href="#testimonial">Testimonial</a></li>
-                                            <li><a class="smooth-menu" href="#contact">Contact</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
+
+        <div class="container">
+            <div class="row">
+                <!--main menu starts-->
+                <div class="col-md-12">
+                    <div class="main-menu">
+                        <div class="navbar navbar-cus">
+                            <div class="navbar-header">
+                                <a href="index.html" class="fancy-font navbar-brand">
+                                    <span class="logo">ALCHEMY</span>
+                                </a>
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+
+                            <div class="navbar-collapse collapse">
+                                <nav>
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li class="active">
+                                            <a class="smooth-menu" href="#home">Home</a>
+                                        </li>
+                                        <li>
+                                            <a class="smooth-menu" href="#about">About</a>
+                                        </li>
+                                        <li>
+                                            <a class="smooth-menu" href="#services">Skills</a>
+                                        </li>
+                                        <li>
+                                            <a class="smooth-menu" href="#portfolio">Portfolio</a>
+                                        </li>
+                                        <li>
+                                            <a class="smooth-menu" href="#contact">Contact</a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
                     </div>
-    
-                    <!--main menu ends-->
                 </div>
-            </div>
-        <canvas  id="canvas"></canvas>
 
-        <div class="name fancy-font">
-                    Abdulrahman
+                <!--main menu ends-->
+            </div>
         </div>
+        <canvas id="canvas"></canvas>
         <div class="titles">
-            <h1>Hello! <span>This is Alchemy</span></h1>
+            <h1>Hello!
+                <span>My name is Abdulrahman</span>
+            </h1>
             <h2>I am a Full Stack Web Developer</h2>
         </div>
-        
+
         <div class="social">
             <a class="facebook" href="#" target="_blank">Facebook</a>
             <a class="twitter" href="https://www.twitter.com/maanoatu1" target="_blank">Twitter</a>
             <a class="instagram" href="https://www.instagram.com/maanomohamed" target="_blank">Instagram</a>
         </div>
-
-        
     </header>
-    
-    <section class="instagram-wrap">
-        
+    <section class="instagram-wrap" id="about">
+        <div class="container">
+            <div class="row first">
+                <div class="col-md-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="parallax-container">
+                        <div class="parallax">
+                            <img src="images/about.jpg" class="about img-responsive" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5 col-md-5 col-sm-5 col-xs-12">
+                    <div class="aboutme">
+                        <h3 style="text-align: center;">About Me</h3>
+                        <p class="line-one"></p>
+                        <h1>Web Developer</h1>
+                        <h5>I am a really passionate web developer who also happens to be a student of life. During my free times I am usually coding and working on projects.</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
-    
+    <section class="skilling" id="services">
+        <div class="container content-section text-center">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div id="skill-bar-wrapper">
+                        <h1>Skills</h1>
+                        <div class="text-left">
+
+                            <!-- C++ -->
+                            Python
+                            <span style="float:right;">95%</span>
+                            <div class="skillbar-container clearfix" data-percent="95%">
+                                <div class="skills" style="background: white;"></div>
+                            </div>
+
+                            <!-- Fortran -->
+                            Django
+                            <span style="float:right;">65%</span>
+                            <div class="skillbar-container clearfix" data-percent="65%">
+                                <div class="skills" style="background: white;"></div>
+                            </div>
+
+                            <!-- Java -->
+                            Flask
+                            <span style="float:right;">35%</span>
+                            <div class="skillbar-container clearfix" data-percent="35%">
+                                <div class="skills" style="background: white;"></div>
+                            </div>
+
+                            <!-- HTML -->
+                            HTML/CSS
+                            <span style="float:right;">85%</span>
+                            <div class="skillbar-container clearfix" data-percent="85%">
+                                <div class="skills" style="background: white;"></div>
+                            </div>
+
+                            <!-- JavaScript -->
+                            JavaScript
+                            <span style="float:right;">45%</span>
+                            <div class="skillbar-container clearfix" data-percent="60%">
+                                <div class="skills" style="background: white;"></div>
+                            </div>
+
+                            <!-- jQuery -->
+                            jQuery
+                            <span style="float:right;">50%</span>
+                            <div class="skillbar-container clearfix" data-percent="50%">
+                                <div class="skills" style="background: white;"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="portfolio">
+        <div>
+            <p class="line-one"></p>
+            <h1 style="text-align: center;">Projects</h1>
+            <p class="line-one"></p>
+        </div>
+        <div class="container space">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="images/ig.png" alt="">
+                        <div class="overlay">
+                            <h2>PHOTOGRAM</h2>
+                            <p>
+                                <a href="https://photo-gram.herokuapp.com/">Photogram</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="images/blog.png" alt="">
+                        <div class="overlay">
+                            <h2>BLOG</h2>
+                            <p>
+                                <a href="https://alchemyblog.herokuapp.com/">CLICK HERE</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row space">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="images/desplash.png" alt="">
+                        <div class="overlay">
+                            <h2>Desplash</h2>
+                            <p>
+                                <a href="https://desplasher.herokuapp.com/">CLICK HERE</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="images/news.png" alt="">
+                        <div class="overlay">
+                            <h2>A NEWS APP</h2>
+                            <p>
+                                <a href="https://thenewshighlight.herokuapp.com/">CLICK HERE</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--contact area starts-->
+
+    <section class="contacte">
+        <div class="contact-area section-padding" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-header wow fadeInDown" data-wow-delay="0.2s">
+                            <p class="line-one"></p>
+                            <h1 style="text-align: center;">CONTACT ME</h1>
+                            <p class="line-one"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cont space">
+                    <ul class="contact">
+                        <li style="text-align: left;">
+                            <p>
+                                <i class="fas fa-map"></i>
+                            </p>
+                            <p>
+                                <strong>Nairobi</strong>
+                                </br>Moringa School</p>
+                        </li>
+                        <li style="text-align: left;">
+                            <p>
+                                <i class="fa fa-phone"></i>
+                            </p>
+                            <p>
+                                <strong>Phone:</strong>
+                                </br>+254710777368</p>
+                        </li>
+                        <li style="text-align: left;">
+                            <p>
+                                <i class="fa fa-envelope"></i>
+                            </p>
+                            <p>
+                                <strong>E-mail:</strong>
+                                </br>maanoatu17@gmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-10 col-md-offset-1">
+                        <form id="contact-form" method="post" action="mailto:maanoatu17@gmail.com" class="wow fadeInDown" data-wow-delay="1.2s">
+
+                            <div class="messages"></div>
+                            <!--you can change the message in contact.php file -->
+
+                            <div class="controls">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Enter your full name *" required="required"
+                                                data-error="Fullname is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Enter your email *" required="required"
+                                                data-error="Valid email is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea id="form_message" name="message" class="form-control" placeholder="Your Message *" rows="4" required="required"
+                                                data-error="Leave a message for me"></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button class="btn btn-send" value="">Send message</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--contact area ends-->
+    </section>
     <footer>
+
+
+        <!--Footer Area Starts-->
+
+        <div class="footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                        <p>&copy; All Right Reserved By
+                            <a href="https://www.github.com/alchemy" target="_blank">Abdulrahman</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer Area Ends-->
         <script src="js/jquery-3.3.1.js"></script>
         <script type="text/javascript" src="js/bootstrap.js"></script>
-        <script type="text/javascript" src="js/instafeed.min.js"></script>
-        <script type="text/javascript" src="js/app.js"></script> 
+        <script type="text/javascript" src="js/materialize.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+
     </footer>
     <section class="footer-bottom">
- 
+
     </section>
 
 </body>
+
 </html>
